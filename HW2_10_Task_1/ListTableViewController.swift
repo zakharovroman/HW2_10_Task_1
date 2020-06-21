@@ -10,7 +10,6 @@ import UIKit
 
 class ListTableViewController: UITableViewController {
 
-    //private let url = NetworkManager.shared.url
     private var picsums: [Picsum] = []
     
     override func viewDidLoad() {
