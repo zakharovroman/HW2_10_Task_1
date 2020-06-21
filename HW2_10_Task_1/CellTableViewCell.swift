@@ -20,15 +20,15 @@ class CellTableViewCell: UITableViewCell {
         self.widthUILabel.text = "Width: \(picsum.width ?? 0)"
         self.heightUILabel.text = "Height: \(picsum.height ?? 0)"
 
-        DispatchQueue.global().async {
-
-            guard let stringURL = picsum.download_url else { return }
-            guard let imageURL = URL(string: stringURL) else { return }
-            guard let imageData = try? Data(contentsOf: imageURL) else { return }
-            DispatchQueue.main.async {
-                self.imageUIImageView.image = UIImage(data: imageData)
-            }
-        }
+//        DispatchQueue.global().async {
+//
+//            guard let stringURL = picsum.download_url else { return }
+//            guard let imageURL = URL(string: stringURL) else { return }
+//            guard let imageData = try? Data(contentsOf: imageURL) else { return }
+//            DispatchQueue.main.async {
+//                self.imageUIImageView.image = UIImage(data: imageData)
+//            }
+//        }
         
     }
 

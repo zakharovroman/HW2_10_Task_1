@@ -10,17 +10,12 @@ import UIKit
 
 class ListTableViewController: UITableViewController {
 
-    private let url = "https://picsum.photos/v2/list"
+    //private let url = NetworkManager.shared.url
     private var picsums: [Picsum] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.rowHeight = 100
-    }
-    
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        tableView.reloadData()
     }
     
     // MARK: - Table view data source
@@ -33,7 +28,7 @@ class ListTableViewController: UITableViewController {
 
         let picsum = picsums[indexPath.row]
         cell.configure(with: picsum)
-
+        tableView.reloadData()
         return cell
     }
     
@@ -42,21 +37,7 @@ class ListTableViewController: UITableViewController {
     }
     
     func fetchData() {
-        guard let url = URL(string: url) else { return }
-        
-        URLSession.shared.dataTask(with: url) { (data, response, error) in
-            if let error = error { print(error); return }
-            guard let data = data else { return }
-            
-            let decoder = JSONDecoder()
-            
-            do {
-                self.picsums = try decoder.decode([Picsum].self, from: data)
-            } catch let error {
-                print(error.localizedDescription)
-            }
-            
-        }.resume()
+        picsums = Picsum.getList()
     }
     
 }

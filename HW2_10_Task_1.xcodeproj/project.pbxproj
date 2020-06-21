@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		30080E1B24A0055800C289F5 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30080E1A24A0055800C289F5 /* NetworkManager.swift */; };
 		30B988A0249EB65F00696B03 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30B9889F249EB65F00696B03 /* AppDelegate.swift */; };
 		30B988A2249EB65F00696B03 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30B988A1249EB65F00696B03 /* SceneDelegate.swift */; };
 		30B988A4249EB65F00696B03 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30B988A3249EB65F00696B03 /* MainViewController.swift */; };
@@ -19,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		30080E1A24A0055800C289F5 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		30B9889C249EB65F00696B03 /* HW2_10_Task_1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HW2_10_Task_1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		30B9889F249EB65F00696B03 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		30B988A1249EB65F00696B03 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -68,6 +70,7 @@
 				30B988B3249F901400696B03 /* ListTableViewController.swift */,
 				30B988B5249F905200696B03 /* CellTableViewCell.swift */,
 				30B988B7249F938500696B03 /* Picsum.swift */,
+				30080E1A24A0055800C289F5 /* NetworkManager.swift */,
 				30B988A5249EB65F00696B03 /* Main.storyboard */,
 				30B988A8249EB66100696B03 /* Assets.xcassets */,
 				30B988AA249EB66100696B03 /* LaunchScreen.storyboard */,
@@ -150,6 +153,7 @@
 				30B988B8249F938500696B03 /* Picsum.swift in Sources */,
 				30B988B6249F905200696B03 /* CellTableViewCell.swift in Sources */,
 				30B988A4249EB65F00696B03 /* MainViewController.swift in Sources */,
+				30080E1B24A0055800C289F5 /* NetworkManager.swift in Sources */,
 				30B988A0249EB65F00696B03 /* AppDelegate.swift in Sources */,
 				30B988A2249EB65F00696B03 /* SceneDelegate.swift in Sources */,
 				30B988B4249F901400696B03 /* ListTableViewController.swift in Sources */,
